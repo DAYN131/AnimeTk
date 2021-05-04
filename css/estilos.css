@@ -1,0 +1,834 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background:#333333;
+}
+
+.contenedor h2{
+	color: #33cccc;
+}
+  
+a {
+	text-decoration: none;
+}
+
+b{
+	color:#cc99ff;
+}
+  .contenedor {
+	width: 90%;
+	max-width: 1000px;
+	margin: auto;
+	padding-bottom: 120px;
+  }
+  
+  /* ----- ----- HEADER ----- ----- */
+  header {
+	width: 100%;
+	text-align: center;
+	padding: 60px 0;
+  }
+  
+  header h1 {
+	font-weight: normal;
+	font-size: 40px;
+	line-height: 40px;
+	margin-bottom: 10px;
+  }
+  
+  header h2 {
+	font-weight: 300;
+	font-size: 24px;
+	line-height: 24px;
+	color: #919191;
+  }
+  
+  /* ----- ----- MAIN ----- ----- */
+  main {
+	width: 100%;
+  }
+  
+  main nav {
+	width: 100%;
+	display: flex;
+	margin-bottom: 60px;
+  }
+  
+  main nav .btn-menu {
+	display: inline-block;
+	width: 65px;
+	height: 65px;
+	border: 1px solid #000;
+	background: #00264d;
+	cursor: pointer;
+	font-size: 28px;
+	margin-right: 20px;
+	transition: .3s ease all;
+	color: lightseagreen;
+  }
+  
+  main nav .btn-menu:hover {
+	border:1px solid #828282;
+	color: #fff;
+  }
+  
+  main nav .banner {
+	display: inline-block;
+	width: 100%;
+	background: url(../img/banner.jpg);
+	background-size: cover;
+	text-align: center;
+	height: 65px;
+	line-height: 65px;
+	font-size: 26px;
+	font-weight: 300;
+	color: #fff;
+  }
+  
+  main .productos {
+	display: flex;
+	justify-content: space-between;
+  }
+  
+  main .productos figure {
+	max-width: 320px;  
+	box-shadow:0px 3px 6px rgba(0,0,0,.16);
+  }
+  
+  main .productos img {
+	vertical-align: top;
+	width: 100%;
+  }
+  
+  main .productos figure figcaption a {
+	background: #000;
+	display: inline-block;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	color: #fff;
+	height: 60px;
+	line-height: 60px;
+	padding: 0 20px;
+	font-weight: 300;
+  }
+  
+  /* ------------------------- */
+  /* Pushbars: Estilos Generales */
+  /* ------------------------- */
+  .pushbar-menu{
+	background: #070d13;
+	color: white;
+	padding:20px;
+  }
+  
+  .pushbar-menu .btn-cerrar.derecha{
+	text-align: right;
+  }
+  
+  .pushbar-menu .btn-cerrar.izquierda{
+	text-align: left;
+  }
+  
+  .pushbar-menu .btn-cerrar button{
+	background: none;
+	color: #fff;
+	border:none;
+	cursor: pointer;
+	font-size: 20px;
+  }
+  
+  
+  /* ----- ----- Pushbar: Menu de Navegacion ----- ----- */
+  
+  .pushbar-menu a {
+	display: block;
+	color:#00e6ac;
+	padding: 20px 0;
+	border-bottom: 1px solid rgba(112,112,122,60);
+	font-weight: 300;
+	font-size: 18px;
+	transition:.3s ease color;
+  }
+  
+  .pushbar-menu li{
+	padding: 0.1em 1em 0.5em 1em; 
+	  width: 12%;
+	  float: left;
+	  list-style-type: none; 
+	  position: relative; 
+  }
+
+ 	.contenedor  h1{
+	font-size: 3em;
+	color: #ffa64d;
+	}
+	.contenedor h2{
+	font-size: 2em;
+	color: #33cccc;
+	}
+  
+  
+  .pushbar-menu a:hover{
+	color: #fff;
+  }
+  
+  /* ----- ----- Pushbar: Carrito de Compras ----- ----- */
+  
+  /* ----- ----- Pushbar: Productos ----- ----- */
+  
+  /* ----- ----- Pushbar: Formulario Newsletter  ----- ----- */
+  
+  /* ------------------------- */
+  /* MEDIA QUERIES */
+  /* ------------------------- */
+  @media screen and (max-width: 600px) {
+	header h1 {
+	  font-size: 30px;
+	  line-height: 30px;
+	}
+  
+	header h2 {
+	  font-size: 16px;
+	  line-height: 16px;
+	}
+  
+	main nav .banner {
+	  font-size: 14px;
+	}
+  
+	main .productos {
+	  flex-direction: column;
+	  align-items: center;
+	}
+  
+	main .productos figure {
+	  margin-bottom: 40px;
+	}
+
+	.contenedor{
+		position: relative;
+		width: 100%;
+		display: block;
+
+	}
+
+
+  }
+
+/*Estilos Gnerales de las demas Paginas xd */
+
+h1{
+	text-align: center;
+	color:#ffa64d;
+	font-family:cursive;
+}
+
+p{
+	font-family: Euphemia;
+	font: 20px;
+	text-align: justify;
+}
+
+
+li{
+	font-family: Euphemia;
+	font: 10px;
+}
+
+#patreon{
+	font-size: 25px;
+	background-color: #00264d;
+	color:#33cccc;
+}
+
+
+.Info{
+	margin:5px;
+	width: 50%;
+	float: left;
+	position: relative;
+	padding: 15px;
+	color: #fff;
+	font-size: 20px;
+}
+
+.Imagenes{
+	object-fit: contain;
+	width: 50%;
+	margin: auto;
+}
+
+.Imagenes img{
+	border-radius: 5%;
+	object-fit: contain;
+	width: 100%;
+	height: 100%;
+}
+
+
+.Aside{
+	margin:5px;
+	width: 45%;
+	float: right;
+	position: relative;
+	text-align: center;
+}
+
+.Aside a:link{
+	color:#ff9900;
+}
+
+.Aside a:visited{
+	color:#33cccc;
+}
+
+
+
+.articulos{
+	text-align: center;
+	margin: auto;
+	width: 75%;
+	margin-bottom: 1em;
+}
+
+footer{
+	display: grid;
+    width:100%;
+	margin: 5px;	
+}
+
+footer a{
+	font-size: 30px;
+}
+footer a:link{
+	color:#ff9900;
+}
+footer a:visited{
+	color: #33cccc;
+}
+
+footer h4{
+	color:#00e6ac;
+	font-size: 20px;
+}
+
+
+/* Diseño de la Pagina Generos */
+
+.EncabezadoG{
+	display: flex;
+	width: 100%;
+	height: 700px;
+	background: url("https://i.pinimg.com/originals/d5/40/8c/d5408c777c7f452c1437c4d1c0ac3ca0.jpg") ;
+	text-align: center;
+}
+
+.EncabezadoG h1{
+	font-size: 70px;
+	margin: auto;
+	color: #ffffff;
+	font-family: 'Oswald', sans-serif;
+	letter-spacing: 3px;
+	cursor: default;
+	border-radius: 10px;
+	background: rgba(0,0,0,0.8);
+}
+
+.EncabezadoG h1{
+	font-size: 3em;
+}
+
+.contenedorn{
+	margin-left: 2%;
+}
+
+.contenedorn  h1{
+	font-size: 3em;
+	color: #ffa64d;
+}
+.contenedorn h2{
+	font-size: 2em;
+	color: #33cccc;
+}
+
+.articulos img{
+	border-radius: 5%;
+	object-fit: cover;
+	width: 100%;
+	height: 100%
+}
+
+ul{
+	padding-left: 20px;
+}
+
+footer{
+	display: grid;
+    width:100%;
+	margin: 5px;
+	text-align: center;
+}
+footer i{
+	font-size: 3em;
+	color: #ffa64d;
+}
+
+/* Parte Reponsiva */
+@media (max-width:640px){
+
+
+	.EncabezadoG h1{
+		font-size: 3em;
+	}
+
+	li a{
+		display: block;
+	}
+
+	.Info{
+		display: block;
+		width: 100%;
+	}
+	
+	.Aside{
+		display: block;
+		width: 100%;
+	}
+
+	footer{
+		display: block;
+	}
+
+	.Imagenes{
+		width: 100%;
+
+	}
+
+	.Imagenes img{
+	border-radius: 5%;
+	object-fit: cover;
+	width: 100%;
+	height: 100%
+	}
+
+}
+
+/* Fin del diseño Responsivo */
+
+
+/*Diseño de la Pagina Plataformas*/
+
+.EncabezadoP{
+	display: flex;
+	width: 100%;
+	height: 700px;
+	background: url("https://i.pinimg.com/originals/76/3d/60/763d605a521901578244e6f50e473de6.jpg") ;
+	text-align: center;
+}
+
+.EncabezadoP h1{
+	font-size: 70px;
+	margin: auto;
+	color: #ffffff;
+	font-family: 'Oswald', sans-serif;
+	letter-spacing: 3px;
+	cursor: default;
+	border-radius: 10px;
+	background: rgba(0,0,0,0.8);
+}
+
+.EncabezadoP h1{
+	font-size: 3em;
+}
+
+.ContenedorP{
+	position:relative;
+	margin:auto;
+  	align-items: center;
+	width: 50%;
+}
+
+.InfoP{
+	width: 100%;
+	padding: 15px;
+	color: #fff;
+	font-size: 20px;
+
+}
+
+.video{
+	text-align: center;
+}
+
+.contendorn{
+	position: relative;
+	width: 100%;
+	margin-bottom: 0px;
+
+}
+  main nav .btn-menu1{
+	display: inline-block;
+	width: 65px;
+	height: 65px;
+	border: 1px solid #000;
+	background: #00264d;
+	cursor: pointer;
+	font-size: 28px;
+	margin-right: 20px;
+	transition: .3s ease all;
+	color: lightseagreen;
+  }
+  
+  main nav .btn-menu1:hover {
+	border:1px solid #828282;
+	color: #fff;
+  }
+  
+  main nav .banner1 {
+	display: inline-block;
+	width: 100%;
+	background: url(../img/banner.jpg);
+	background-size: cover;
+	text-align: center;
+	height: 65px;
+	line-height: 65px;
+	font-size: 26px;
+	font-weight: 300;
+	color: #fff;
+  }
+  
+/* Parte Reponsiva */
+@media (max-width:640px){
+
+	.ContenedorP{
+		position:relative;
+		margin:auto;
+		width: 100%;
+	}
+
+	.contenedorn{
+		position: relative;
+		width: 100%;
+		display: block;
+	}
+
+
+	.EncabezadoP h1{
+		font-size: 3em;
+	}
+
+	li a{
+		display: block;
+	}
+
+	.InfoP{
+		display: block;
+		width: 100%;
+	}
+	
+	footer{
+		display: block;
+	}
+
+	.Imagenes{
+		width: 100%;
+
+	}
+
+	.Imagenes img{
+	border-radius: 5%;
+	object-fit: cover;
+	width: 100%;
+	height: 100%
+	}
+
+}
+
+/* Fin del diseño Responsivo */
+
+/*Diseño de la Pagina Reciomendaciones*/
+
+.EncabezadoR{
+	display: flex;
+	width: 100%;
+	height: 700px;
+	background: url("http://www.todopaisajes.com/Imagenes/tormenta-sobre-la-ciudad-de-noche.jpg") ;
+	text-align: center;
+}
+
+.EncabezadoR h1{
+	font-size: 70px;
+	margin: auto;
+	color: #ffffff;
+	font-family: 'Oswald', sans-serif;
+	letter-spacing: 3px;
+	cursor: default;
+	border-radius: 10px;
+	background: rgba(0,0,0,0.8);
+}
+
+.EncabezadoR h1{
+	font-size: 3em;
+}
+
+.ContenedorR{
+	position:relative;
+	margin:auto;
+  	align-items: center;
+	width: 50%;
+}
+
+.InfoP{
+	width: 100%;
+	padding: 15px;
+	color: #fff;
+	font-size: 20px;
+
+}
+
+.video{
+	text-align: center;
+}
+
+.contendorn{
+	position: relative;
+	width: 100%;
+	margin-bottom: 0px;
+
+}
+  main nav .btn-menu1{
+	display: inline-block;
+	width: 65px;
+	height: 65px;
+	border: 1px solid #000;
+	background: #00264d;
+	cursor: pointer;
+	font-size: 28px;
+	margin-right: 20px;
+	transition: .3s ease all;
+	color: lightseagreen;
+  }
+  
+  main nav .btn-menu1:hover {
+	border:1px solid #828282;
+	color: #fff;
+  }
+  
+  main nav .banner1 {
+	display: inline-block;
+	width: 100%;
+	background: url(../img/banner.jpg);
+	background-size: cover;
+	text-align: center;
+	height: 65px;
+	line-height: 65px;
+	font-size: 26px;
+	font-weight: 300;
+	color: #fff;
+  }
+  
+/* Parte Reponsiva */
+@media (max-width:640px){
+
+	.ContenedorP{
+		position:relative;
+		margin:auto;
+		width: 100%;
+	}
+
+	.contenedorn{
+		position: relative;
+		width: 100%;
+		display: block;
+	}
+
+
+	.EncabezadoP h1{
+		font-size: 3em;
+	}
+
+	li a{
+		display: block;
+	}
+
+	.InfoP{
+		display: block;
+		width: 100%;
+	}
+	
+	footer{
+		display: block;
+	}
+
+	.Imagenes{
+		width: 100%;
+
+	}
+
+	.Imagenes img{
+	border-radius: 5%;
+	object-fit: cover;
+	width: 100%;
+	height: 100%
+	}
+
+}
+
+/* Fin del diseño Responsivo */
+
+
+
+/*Fin de del dideño de la Pagina Recomendaciones */
+
+/*Diseño de la Pagina Acerca de */
+
+.EncabezadoA{
+	display: flex;
+	width: 100%;
+	height: 700px;
+	background: url("https://www.reevo.com.mx/wp-content/uploads/2020/03/Software1.jpg") ;
+	text-align: center;
+}
+
+.EncabezadoA h1{
+	font-size: 70px;
+	margin: auto;
+	color: #ffffff;
+	font-family: 'Oswald', sans-serif;
+	letter-spacing: 3px;
+	cursor: default;
+	border-radius: 10px;
+	background: rgba(0,0,0,0.8);
+}
+
+
+.container{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+	padding: 0 20px;
+}
+
+.card-contenedor{
+	display: flex;
+	width: 600px;
+	height: auto;
+	background: #fff;
+	border-radius:2px;
+	box-shadow: 1px 1px 4px 2px rgba(0,0,0 .2);
+}
+
+.header{
+	border-right: 1px solid #ddd ;
+}
+
+.header, .descripcion{
+	padding: 20px;
+	text-align: center;
+}
+
+.header a{
+	position: relative;
+	display: block;
+}
+
+.header img{
+	border-radius: 50%;
+	box-shadow: 0 0 0 8px rgba(0,0,0 .6);
+	margin: 20px 30px;
+	transition: .2;
+	object-fit: cover;
+	
+}
+
+.header a:hover img{
+	box-shadow: 0 0 0 12px rgba(0,0,0 .1);
+}
+
+.header h2{
+	color: orange;
+}
+
+.header h4{
+	color: #262626;
+	margin-bottom: 20px;
+}
+
+.descripcion{
+	color: #262626;
+	position: relative;
+}
+
+.descripcion p{
+	margin: 20px 30px;
+}
+
+.descripcion .social{
+	margin-top: 20px;
+}
+
+.descripcion .social a{
+	display: inline-block;
+	padding: 0 15px;
+	color: orange;
+}
+
+@media (max-width:640px){
+
+	.card-contenedor{
+		display: block;
+		width: 450px;
+	}
+
+	.header{
+		padding: 20px 20px 5px 20px;
+		border: none;
+	}
+
+	.descripcion{
+		padding: 5px 20px 20px 20px;
+		background: transparent;
+	}
+
+
+}
+
+/*Fin de la Pagina Acerca de /*
+
+
+/*Patreon*/
+
+.formulario p{
+    text-align: center;
+    color: #ff8080;
+    font-size: 20px;
+}
+
+.formulario h1{
+    text-align: center;
+    color: #ff8080;
+    font-size: 40px;
+}
+
+.formulario{
+    position: relative;
+    top: 30px;
+	text-align: center;
+}
+
+
+.formulario input{
+    font-size: 20px;
+}
+
+
+.formulario button{
+    font-size: 20px;
+
+}

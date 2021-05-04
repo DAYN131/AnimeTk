@@ -1,0 +1,119 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patreon</title>
+    <link rel="stylesheet" href="css/pushbar.css">
+    <link type="text/css" href="css/estilos.css" rel="stylesheet">
+
+</head>
+<body>
+
+
+    <div class="ContenedorP">
+
+        <div class="contenedorn">
+            <header>
+                <h1>AnimeTK</h1>
+                <h2>La web de los amantes del anime</h2>
+            </header>
+            <main>
+                <nav>
+                    <button class="btn-menu1" data-pushbar-target="pushbar-menu"><i class="fas fa-bars"></i></button>
+                    <a href="#" class="banner1" data-pushbar-target="pushbar-productos">Animes Temporada Primavera</a>
+                </nav>
+    
+            </main>
+    
+            <!-- Pushbars: Menu -->
+            <div data-pushbar-id="pushbar-menu" data-pushbar-direction="top" class="pushbar-menu">
+    
+                <div class="btn-cerrar derecha">
+                    <button data-pushbar-close><i class="fas fa-times"></i></button>
+                </div>
+                <nav class="menu">
+                    
+                        <ul>
+    
+                        <li id="seccion0"> <a href="index.html">Inicio</a>
+    
+                        </li>
+                    
+                    
+                        <li id="seccion1"> <a href="Generos.html">Generos del Anime</a> 
+                        
+                        </li>
+    
+                        <li id="seccion2" > <a href="Plataformas.html">Donde ver anime</a> 
+                        
+                        </li>
+    
+                        <li id="seccion3"> <a href="Recomendaciones.html" target="_blank">Recomendaciones</a> 
+                        
+                        </li>
+    
+                        <li id="seccion4"> <a href="About.html" target="_blank">Acerca de</a> 
+                        
+                        </li>
+    
+    
+                    </ul>
+                    
+                </nav>
+    
+            </div>
+        
+            
+            <!-- Pushbars: Carrito de Compras -->
+            
+    
+            <!-- Pushbars: Productos -->
+            
+    
+            <!-- Pushbars: Newsletter -->
+            
+        </div>
+    
+        
+        <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+        <script src="js/pushbar.js"></script>
+        <script> 
+            var pushbar = new Pushbar({
+                blur: true,
+                overlay:true,
+    
+        });</script>
+        <script src="js/Submenus.js"></script>
+    
+    <div class="formulario">
+
+        <form name=form1>
+
+            <p>Favor de llenar el siguiente formulario para convertirse en un patrocinador de la pagina</p>
+
+            <br>
+            <br>
+        
+             <input type=text  id="Nombre" placeholder="Nombre"><br><br>
+             <input type=password id="Password"  placeholder="Contraseña"><br><br>
+             <input type=number id="Edad" placeholder="Edad">
+    
+    
+            <br>
+            <br>
+    
+            <button id="finish">Finalizar</button>
+    
+            
+            </form> 
+
+            <script src="js/funciones.js"></script>
+
+
+
+    </div>
+        
+    
+</body>
+</html>
